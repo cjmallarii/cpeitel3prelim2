@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #444;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+header,
+section {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+header:hover,
+section:hover {
+  transform: translateY(-5px);
+}
+
+header {
+  max-width: 1200px;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Pushes buttons to the bottom */
+  padding: 2rem;
+  min-height: 600px; /* Ensures enough height for layout */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 1.5rem auto;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 750px;
+  margin: 1rem auto;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.button-container {
+  margin-top: auto; /* Pushes buttons to the bottom */
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+button {
+  background-color: #4a6cff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 250ms, transform 150ms ease-in-out, box-shadow 150ms;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #3a50e0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 24px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
